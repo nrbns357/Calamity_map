@@ -6,7 +6,6 @@ const Nav = () => {
 
   return (
     <S.NavContainer>
-
       <S.NavTitleContainer>알려줄지도</S.NavTitleContainer>
     </S.NavContainer>
   );
