@@ -46,6 +46,7 @@ export const ContentWrap = styled.div`
   margin: 10px 0;
   border-radius: 4px;
   background-color: #f0f0f0;
+  cursor: pointer;
 `;
 
 export const Title = styled.div`
@@ -68,4 +69,5 @@ export const AddContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;

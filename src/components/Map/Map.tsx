@@ -14,9 +14,9 @@ const MapComponent = () => {
         <Map
           center={{ lat: myCoord.lat, lng: myCoord.lng }}
           style={{ width: "100%", height: "100%" }}
-          level={3}
+          level={2}
         >
-          <MapMarkerList coord={myCoord} />
+          <MapMarkerList coord={myCoord && myCoord} />
           <ContentsBoard />
         </Map>
       )}
