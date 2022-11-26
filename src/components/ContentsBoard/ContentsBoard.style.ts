@@ -27,6 +27,7 @@ export const ContentsBoardModalContainer = styled.div`
   background-color: #fff;
   z-index: 10;
   padding: 30px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 3px 10px 0px;
 `;
 
 export const ContentHeader = styled.div`
@@ -36,17 +37,22 @@ export const ContentHeader = styled.div`
 `;
 
 export const BoardContentListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 90%;
   overflow: auto;
+  padding-bottom: 10px;
 `;
 
 export const ContentWrap = styled.div`
   padding: 10px;
   margin: 10px 0;
   border-radius: 4px;
-  background-color: #f0f0f0;
+  background-color: #fff;
   cursor: pointer;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 3px;
+  margin: 10px;
 `;
 
 export const Title = styled.div`

@@ -21,7 +21,10 @@ const ContentsBoard = () => {
         contentsBoardModal ?
           <ContentsBoardStyle.ContentsBoardModalContainer className="animate__animated animate__backInRight">
             <ContentsBoardStyle.ContentHeader>
-              <div style={{ display: "flex", gap: "7px", fontSize: "1.5rem" }}>지금 <div style={{ fontWeight: "bold" }}>당신 근처</div> 에서는...</div>
+              <div>
+                <div style={{ display: "flex", gap: "7px", fontSize: "1.5rem", marginBottom: "10px" }}>지금 <div style={{ fontWeight: "bold" }}>당신 근처</div> 에서는...</div>
+                <div >{data?.data.length}건의 피해가 있어요</div>
+              </div>
               <BiX style={{ cursor: "pointer", fontSize: "1.3rem" }} onClick={() => setContentsBoardModal(false)} />
             </ContentsBoardStyle.ContentHeader>
 

@@ -38,6 +38,23 @@ const MapMarkerList = ({ coord }: { coord: Coord }) => {
         )
       })}
 
+      {
+        (
+          <CustomOverlayMap
+            position={coord}
+          >
+            <S.CustomOverlayMapMarker
+              onClick={() => {
+                map.setLevel(3);
+                map.panTo(new kakao.maps.LatLng(coord.lat, coord.lng))
+              }}>
+              내 위치
+              <S.Tail />
+            </S.CustomOverlayMapMarker>
+          </CustomOverlayMap>
+        )
+      }
+
     </MarkerClusterer>
   );
 };

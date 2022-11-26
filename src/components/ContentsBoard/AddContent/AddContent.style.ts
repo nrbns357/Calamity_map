@@ -25,6 +25,7 @@ export const AddContentContainer = styled.form`
   border-radius: 5px;
   display: grid;
   gap: 10px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 3px;
 `;
 
 export const InputWrrap = styled.div`
